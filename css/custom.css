@@ -1,0 +1,117 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  
+}
+footer {
+	background-color: #f74c3c ; 
+	padding-top: 150px;
+	padding-bottom: 30px;
+}
+
+ul.nav, .jumbotron h1 {
+	font-family: 'Arvo', serif;
+}
+ul.nav {
+	font-size: 13px;
+}
+#get-involved {
+	background-color: #f5f5f5;
+}
+/* Schrift mittig gesetzt 
+   Um ein Ordner zurückzugehen zwecks eines Bildes wie hier ../ macht dies.
+   text-align setzt den text in die Mitte.*/
+.jumbotron {
+	text-align: center;
+	background-image: url('../images/hero_image.jpg');
+	color: white;
+}
+/* Abstand vom Teil h1 zu anderen Teilen etc.*/
+.jumbotron h1 {
+	margin-top: 0px;
+	margin-bottom: 50px;
+
+}
+/* font weight ist die dicke der Schrift video 15*/
+.jumbotron p {
+	margin-bottom: 30px;
+	font-weight: 100;
+	padding: 0 50px;
+}
+.btn-lg {
+	font-size: 36px
+}
+.homepage {
+	text-align: center;
+	padding: 30px;
+
+}
+.homepage h2, .homepage h3 {
+	color:#e74c3c;
+	font-family: 'Arvo', serif;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.homepage h2 {
+	font-size: 30px;
+}
+.homepage h3 {
+	font-size: 26px;
+}
+.homepage p {
+	font-weight: 300;
+	font-size: 21px;
+}
+.homepage a {
+	color:#e74c3c;
+}
+.homepage hr {
+	border-top: 1px solid #e74c3c;
+	margin-top: 15px;
+	width: 160px;
+}
+/* a:hover heist jeder link in der Klasse homepage hat diese Eigenschaften und ist eine pseudo Klasse.
+   Opacity ist die Transparenz. 1 ist sichtbar 0 nicht. */
+.homepage a:hover {
+	color: blue;
+	text-decoration: none;
+	opacity: 0.8;
+}
+/* Responsive Styling */
+@media (max-width: 1199px) { 
+.jumbotron h1 {
+	font-size: 56px;
+	margin-bottom: 30px;
+ }
+}
+
+@media (max-width: 991px) {
+	.jumbotron h1 {
+		font-size: 45px;
+	}
+	.jumbotron p { 
+	padding: 0 10px;
+	}
+#get-involved .col-md-4 {
+	padding: 20px;
+  }
+}
+@media (max-width: 776px) {
+	.jumbotron h1{
+		font-size: 24px;
+	}
+	.jumbotron p {
+		padding: 0 ;
+		font-size: 16px;
+	}
+  .btn-lg {
+  	font-size:18px;
+  }
+  .homepage p {
+  	font-size: 18px;
+  }
+  footer img {
+  	width: 80%;
+  }
+
+}
